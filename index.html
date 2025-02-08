@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bingo Digital</h1>
+    </header>
+
+    <div class="bingo-board" id="bingoBoard"></div>
+
+    <div class="controls">
+      <button id="drawBtn">Sortear Número</button>
+      <div id="drawnNumber">Número Sorteado: -</div>
+      
+      <div id="stats">
+        <p>Números sorteados: <span id="sorteadosCount">0</span> / <span id="totalSorteio">90</span></p>
+        <p>Números restantes: <span id="restantesCount">90</span></p>
+        <p>Números acertados: <span id="acertadosCount">0</span> / <span id="totalAcertos">25</span></p>
+        <p>Números a acertar: <span id="aAcertarCount">25</span></p>
+      </div>
+      
+      <div id="message"></div>
+      <button id="restartBtn" style="display: none;">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
